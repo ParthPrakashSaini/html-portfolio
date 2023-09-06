@@ -1,0 +1,376 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap'); */
+
+@font-face {
+    font-family: heliosext;
+    src: url(heliosext.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2B192E;
+    font-family: heliosext;
+    color: #F5E8DA;
+    margin: 0;
+}
+
+.name{
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+.name h1{
+    font-size: 4rem;
+    letter-spacing: 9px;
+}
+
+.name p{
+    font-size: 2rem;
+}
+
+.space{
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 150px auto;
+}
+
+.intro{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.secondcontainer{
+    margin-left: 50px;
+    display:flex;
+}
+
+.profilepic{
+    margin-right: 100px;
+}
+
+.cr{
+    margin-left: 70px;
+}
+
+.profilepic img{
+    height: 500px;
+    border-radius: 50%;
+}
+
+.greet{
+    font-size: 2rem;
+}
+
+/* MY SKILLS */
+
+.title{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.t1{
+    margin-left: 80px;
+}
+
+.t2 img{
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.t1 img{
+    height: 200px;
+    border-radius: 20px;
+}
+
+.catcoding{
+    transition-duration: 0.4s;
+}
+
+.catcoding:hover{
+    -webkit-box-shadow: -1px 1px 19px 5px rgba(197,237,78,0.5);
+    -moz-box-shadow: -1px 1px 19px 5px rgba(197,237,78,0.5);
+    box-shadow: -1px 1px 19px 5px rgba(197,237,78,0.5);
+}
+
+.relaxman{
+    transition-duration: 0.4s;
+}
+
+.relaxman:hover{
+    -webkit-box-shadow: -1px 1px 19px 5px rgba(19,90,242,1);
+    -moz-box-shadow: -1px 1px 19px 5px rgba(19,90,242,1);
+    box-shadow: -1px 1px 19px 5px rgba(19,90,242,1);
+}
+
+.d1{
+    margin-right: 50px;
+}
+
+.d2{
+    margin-right: 50px;
+}
+
+.d1 h3{
+    font-size: 1.5rem;
+}
+
+.d2 h3{
+    font-size: 1.5rem;
+}
+
+.fourthcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1{
+    height: 450px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: #13504d;
+    /* shadow */
+    /* box-shadow: 1px -3px 72px -22px rgba(240,77,110,1); */
+    box-shadow: rgba(40, 40, 189, 0.581) 0px 50px 100px -20px, rgba(211, 20, 20, 0.3) 0px 30px 60px -30px, rgba(22, 35, 18, 0.746) 0px -2px 6px 0px inset;
+}
+
+.card1 video{
+    margin-top: 20px;
+    height: 200px;
+    border-color: black;
+    border-style:solid;
+}
+
+.pname p{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.btn{
+    margin-top: 50px;
+}
+
+.pbtn{
+    transition-duration: 0.4s;
+    padding: 7px;
+    border-radius: 5px;
+    background-color:#F5E8DA;
+    font-family: heliosext;
+    text-decoration: none;
+    color: black;
+}
+
+.pbtn:hover{
+    background-color: #0b1919;
+    color: white;
+}
+
+.fifthcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactme{
+    width: 65%;
+    font-size: 1.5rem;
+}
+
+.conbtn{
+    background-color: #F5E8DA; 
+    border: none;
+    color: black;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-family: heliosext;
+}
+
+.conbtn:hover{
+    background-color: #13504d;
+    color: white;
+}
+
+.conbtn a{
+    text-decoration: none;
+    color:black;
+}
+
+.linkmail{
+    margin-top: 5%;
+}
+
+.bottom-container {
+    background-color: #2B192E;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+.bottom-container a{
+    text-decoration: none;
+    color: #F5E8DA;
+    transition-duration: 0.4s;
+}
+
+.footer-link:hover{
+    color: #13504d;
+}
+
+/* MEDIA-QUERIES */
+@media (max-width: 1290px) {
+    .pic {
+      max-height: 400px;
+    }
+
+    .intro p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 820px){
+    .intro p{
+        max-width: 100%;
+        font-size: 10px;
+    }
+    
+    .pic {
+        max-height: 250px;
+    }
+
+    .t1 img{
+        max-height: 150px;
+    }
+    
+    .t2 img{
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    .greet h2{
+        font-size: 1.5rem;
+    }
+    
+    .intro p{
+        font-size: 8px;
+    }
+
+    .pic {
+        max-height: 200px;
+    }
+    
+    .t1 img{
+        max-height: 100px;
+    }
+    
+    .t2 img{
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pic{
+        max-height: 120px;
+    }
+
+    .intro p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .secondcontainer{
+        margin-left: 0px;
+        display: block;
+    }
+    
+    .greet h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .pic{
+        max-height: 100px;
+    }
+
+    .table{
+        display: block;
+    }
+
+    .t1{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .d1{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .t2{
+        text-align: center;
+    }
+
+    .t2 img{
+        margin-left: 0;
+    }
+
+    .d2 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .cr{
+        margin-left: 0;
+    }
+
+    .intro {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .profilepic {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .card1{
+        max-width: 305px;
+        max-height: 400px;
+    }
+
+    .card1 video{
+        max-height: 150px;
+    }
+
+    .contactme {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .conbtn{
+        font-size: 10px;
+    }
+}
